@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Algebra &#8212; Neo&#39;s Journal</title>
+    <title>Normalising a vector &#8212; Neo&#39;s Journal</title>
   
   
   
@@ -18,34 +18,33 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Mathematics/Algebra/index';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Logarithm" href="Logarithm.html" />
-    <link rel="prev" title="Mathematics" href="../index.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Physics/normalisevector';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Physics" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -77,7 +76,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="../../search.html"
+      action="../search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -126,7 +125,7 @@
     
   
 
-<a class="navbar-brand logo" href="../../index.html">
+<a class="navbar-brand logo" href="../index.html">
   
   
   
@@ -150,16 +149,16 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Mathematics</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Algebra</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="Logarithm.html">Logarithm</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mathematics/index.html">Mathematics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Mathematics/Algebra/index.html">Algebra</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Mathematics/Algebra/Logarithm.html">Logarithm</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2"><a class="reference internal" href="../linear_approximation.html">Linear Approximation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mathematics/linear_approximation.html">Linear Approximation</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../Physics/index.html">Physics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../Physics/normalisevector.html">Normalising a vector</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Physics</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Normalising a vector</a></li>
 </ul>
 </details></li>
 </ul>
@@ -216,7 +215,7 @@
       
       
       
-      <li><a href="../../_sources/Mathematics/Algebra/index.rst" target="_blank"
+      <li><a href="../_sources/Physics/normalisevector.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +286,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -298,11 +299,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Algebra</h1>
+    <h1>Normalising a vector</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intuition">Intuition</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -312,16 +322,38 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="algebra">
-<h1>Algebra<a class="headerlink" href="#algebra" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Logarithm.html">Logarithm</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Logarithm.html#logarithm-rules">Logarithm Rules</a></li>
-</ul>
-</li>
-</ul>
-</div>
+  <section id="normalising-a-vector">
+<span id="normalisinvector"></span><h1>Normalising a vector<a class="headerlink" href="#normalising-a-vector" title="Link to this heading">#</a></h1>
+<p>Normalising a vector is the process of making the length
+of a vector equal to 1, while maintaining the direction.
+This is called a <cite>unit vector</cite>.</p>
+<section id="formula">
+<h2>Formula<a class="headerlink" href="#formula" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\overrightarrow{u} = { \overrightarrow{v} \over {\vert\vert\overrightarrow{v} \vert\vert} }\]</div>
+</section>
+<section id="intuition">
+<h2>Intuition<a class="headerlink" href="#intuition" title="Link to this heading">#</a></h2>
+<p>Building an understanding of this process.
+Starting out with a 2D vector <span class="math notranslate nohighlight">\(\lt2, 4\gt\)</span>.</p>
+<img alt="../_images/normalisevectors1.png" src="../_images/normalisevectors1.png" />
+<p>We can compute the hypotenuse with Pythagoras.</p>
+<p><span class="math notranslate nohighlight">\(\sqrt{2^2 + 4^2} = \sqrt{20}\)</span></p>
+<p>So the question then becomes, “What can I do to <span class="math notranslate nohighlight">\(\sqrt{20}\)</span>
+to make it equal to 1”. That’s an easy question to answer, just
+divide it by itself. <strong>BUT</strong> the catch is preserving the angle.</p>
+<p>Working out the angle we get <span class="math notranslate nohighlight">\(\arcsin({4 \over \sqrt{20}}) \approx 63.43\)</span></p>
+<p>Our <cite>unit vector</cite> will always be a length of 1. That means our vector point
+will lie at 63.43 degrees on a unit circle.</p>
+<img alt="../_images/normalisevectors2.png" src="../_images/normalisevectors2.png" />
+<p>To get our values we just plug in 63.43 into cosine and sine.</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\sin{(63.43)} = 0.89\\\cos{(63.43)} = 0.45\end{aligned}\end{align} \]</div>
+<p>Which is just our values of <span class="math notranslate nohighlight">\({4 \over \sqrt{20}}\)</span> and <span class="math notranslate nohighlight">\({2 \over \sqrt{20}}\)</span>.</p>
+<p>Putting it all together we can say</p>
+<div class="math notranslate nohighlight">
+\[{{\lt2,4\gt} \over \sqrt{20}} = \lt0.45, 0.89\gt\]</div>
+</section>
 </section>
 
 
@@ -336,22 +368,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../index.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Mathematics</p>
+        <p class="prev-next-title">Physics</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Logarithm.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Logarithm</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -359,6 +382,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intuition">Intuition</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
@@ -403,8 +442,8 @@ By Neo Sahadeo
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

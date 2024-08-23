@@ -5,3 +5,4 @@ Neo's Journal
    :glob:
 
    Mathematics/index.rst
+   Physics/index.rst

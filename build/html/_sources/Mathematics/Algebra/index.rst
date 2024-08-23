@@ -1,2 +1,7 @@
-Hello 
-======
+Algebra
+*******
+
+.. toctree::
+   :glob:
+
+   Logarithm.rst
