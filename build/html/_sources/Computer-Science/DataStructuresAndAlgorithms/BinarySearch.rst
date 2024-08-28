@@ -7,20 +7,20 @@ is found.
 
 **Steps**
 
-1. Go to half with width of the array selection
-2. If the index in the array is equal to the value
-   wanted, return.
-3. If value is less than the index in the array choose
-   the left hand side and restart steps
+1. Go to the half-way point of the width of the 
+   array selection.
+2. If the array at that position is equal to the value
+   wanted, return it.
+3. If the value is less than the array at that position
+   choose the "left hand" side and restart steps.
    **or**
-   If value is greater than the index in the array choose
-   the right hand side and restart the steps.
+3. If the value is less than the array at that position
+   the "right hand" side and restart the steps.
 
 Time Complexity
 ***************
 
-Iterates through the entire array of values until
-the value is found. 
+Iterates through the entire array until the value is found. 
 
 .. math::
    O(log(n))
@@ -35,7 +35,7 @@ continuously until the value we want is found.
 
    [0 ..  N]
 
-The first value we check if the mid point.
+The first value we check is the mid point.
 
 .. math::
 
@@ -117,13 +117,38 @@ Implementation
 
   let low = 0;
   let high = array.length;
+
   while (low < high) {
     const m = Math.floor(low + ((high - low) / 2));
     const v = array[m];
-    if (v === needle) {
+    if (v === value) {
       return true;
     }
     if (v > needle) {
+      high = m;
+    } else {
+      low = m + 1;
+    }
+  }
+  return false;
+
+**C++**
+
+.. code::
+
+  int array[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+  int value = 6;
+
+  int low = 0;
+  int high = 10;
+
+  while (low < high) {
+    int m = std::floor(low + ((high - low) / 2));
+    int v = array[m];
+    if (v == value) {
+      return true;
+    }
+    if (v > value) {
       high = m;
     } else {
       low = m + 1;

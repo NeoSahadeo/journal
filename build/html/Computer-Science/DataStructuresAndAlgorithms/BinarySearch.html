@@ -342,19 +342,21 @@ an array of sorted values till the desired value
 is found.</p>
 <p><strong>Steps</strong></p>
 <ol class="arabic simple">
-<li><p>Go to half with width of the array selection</p></li>
-<li><p>If the index in the array is equal to the value
-wanted, return.</p></li>
-<li><p>If value is less than the index in the array choose
-the left hand side and restart steps
-<strong>or</strong>
-If value is greater than the index in the array choose
-the right hand side and restart the steps.</p></li>
+<li><p>Go to the half-way point of the width of the
+array selection.</p></li>
+<li><p>If the array at that position is equal to the value
+wanted, return it.</p></li>
+<li><p>If the value is less than the array at that position
+choose the “left hand” side and restart steps.
+<strong>or</strong></p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>If the value is less than the array at that position
+the “right hand” side and restart the steps.</p></li>
 </ol>
 <section id="time-complexity">
 <h2>Time Complexity<a class="headerlink" href="#time-complexity" title="Link to this heading">#</a></h2>
-<p>Iterates through the entire array of values until
-the value is found.</p>
+<p>Iterates through the entire array until the value is found.</p>
 <div class="math notranslate nohighlight">
 \[O(log(n))\]</div>
 <section id="simple-proof">
@@ -363,7 +365,7 @@ the value is found.</p>
 continuously until the value we want is found.</p>
 <div class="math notranslate nohighlight">
 \[[0 ..  N]\]</div>
-<p>The first value we check if the mid point.</p>
+<p>The first value we check is the mid point.</p>
 <div class="math notranslate nohighlight">
 \[N \over 2\]</div>
 <p>Then check the mid point of that.</p>
@@ -421,10 +423,11 @@ value of N assuming N is even.</p>
 
 <span class="kd">let</span><span class="w"> </span><span class="nx">low</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
 <span class="kd">let</span><span class="w"> </span><span class="nx">high</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">low</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">high</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">low</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">((</span><span class="nx">high</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">low</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">));</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">array</span><span class="p">[</span><span class="nx">m</span><span class="p">];</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">v</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">needle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">v</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">v</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">needle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -434,6 +437,28 @@ value of N assuming N is even.</p>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 <span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>C++</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">array</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">};</span>
+<span class="nb">int</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+
+<span class="nb">int</span> <span class="n">low</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nb">int</span> <span class="n">high</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">low</span> <span class="o">&lt;</span> <span class="n">high</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nb">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">std</span><span class="p">::</span><span class="n">floor</span><span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="p">((</span><span class="n">high</span> <span class="o">-</span> <span class="n">low</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">));</span>
+  <span class="nb">int</span> <span class="n">v</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">m</span><span class="p">];</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">==</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">&gt;</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">high</span> <span class="o">=</span> <span class="n">m</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">low</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="n">false</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
