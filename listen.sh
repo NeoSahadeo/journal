@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 source .venv/bin/activate
-command_to_run="make html"
+command_to_run="sphinx-build -M html source build -a"
 folder_to_search="source"
 directories=`find $folder_to_search -type f`
 files=()
