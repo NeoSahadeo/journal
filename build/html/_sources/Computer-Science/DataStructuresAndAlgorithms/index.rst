@@ -7,3 +7,4 @@ Content on data structures and algorithms.
 
    LinearSearch.rst
    BinarySearch.rst
+   BubbleSort.rst

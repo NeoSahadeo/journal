@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Data Structures and Algorithms &#8212; Neo&#39;s Journal</title>
+    <title>Bubble Sort &#8212; Neo&#39;s Journal</title>
   
   
   
@@ -41,11 +41,11 @@
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Computer-Science/DataStructuresAndAlgorithms/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Computer-Science/DataStructuresAndAlgorithms/BubbleSort';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Linear Search" href="LinearSearch.html" />
-    <link rel="prev" title="Computer-Science" href="../index.html" />
+    <link rel="next" title="Mathematics" href="../../Mathematics/index.html" />
+    <link rel="prev" title="Binary Search" href="BinarySearch.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -151,10 +151,10 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Computer-Science</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Data Structures and Algorithms</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Data Structures and Algorithms</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="LinearSearch.html">Linear Search</a></li>
 <li class="toctree-l3"><a class="reference internal" href="BinarySearch.html">Binary Search</a></li>
-<li class="toctree-l3"><a class="reference internal" href="BubbleSort.html">Bubble Sort</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Bubble Sort</a></li>
 </ul>
 </details></li>
 </ul>
@@ -226,7 +226,7 @@
       
       
       
-      <li><a href="../../_sources/Computer-Science/DataStructuresAndAlgorithms/index.rst" target="_blank"
+      <li><a href="../../_sources/Computer-Science/DataStructuresAndAlgorithms/BubbleSort.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -297,7 +297,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -308,11 +310,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Data Structures and Algorithms</h1>
+    <h1>Bubble Sort</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-complexity">Time Complexity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-proof">Simple Proof</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation">Implementation</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -322,32 +334,79 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="data-structures-and-algorithms">
-<h1>Data Structures and Algorithms<a class="headerlink" href="#data-structures-and-algorithms" title="Link to this heading">#</a></h1>
-<p>Content on data structures and algorithms.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="LinearSearch.html">Linear Search</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="LinearSearch.html#time-complexity">Time Complexity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="LinearSearch.html#implementation">Implementation</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="BinarySearch.html">Binary Search</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="BinarySearch.html#time-complexity">Time Complexity</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="BinarySearch.html#simple-proof">Simple Proof</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="BinarySearch.html#implementation">Implementation</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="BubbleSort.html">Bubble Sort</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="BubbleSort.html#time-complexity">Time Complexity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="BubbleSort.html#simple-proof">Simple Proof</a></li>
-<li class="toctree-l2"><a class="reference internal" href="BubbleSort.html#implementation">Implementation</a></li>
-</ul>
-</li>
-</ul>
+  <section id="bubble-sort">
+<h1>Bubble Sort<a class="headerlink" href="#bubble-sort" title="Link to this heading">#</a></h1>
+<p>Bubble sort involves swaping elements to
+sort an array from lowest to highest.</p>
+<p>This is the easiest sorting algorithm to
+implement (and understand).</p>
+<section id="time-complexity">
+<h2>Time Complexity<a class="headerlink" href="#time-complexity" title="Link to this heading">#</a></h2>
+<p>Each value is iterated through the sum of
+N times.</p>
+<div class="math notranslate nohighlight">
+\[O(n^2)\]</div>
+</section>
+<section id="simple-proof">
+<h2>Simple Proof<a class="headerlink" href="#simple-proof" title="Link to this heading">#</a></h2>
+<p>Reminder that the sum of a linear series
+of values is</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}100 + 1 = 101\\99 + 2 = 101\\..\\98 + 3 = 101\end{aligned}\end{align} \]</div>
+<p>or more abstractly. Where the last element
+will be 1</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}N\\N-1\\N-2\\..\\N-N+1 = 1\end{aligned}\end{align} \]</div>
+<p>or more simply put</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle\sum_{i=0}^n {N - i}\]</div>
+<p>Thus, assuming the worst case of a reversed list
+where <span class="math notranslate nohighlight">\(N+N-1\)</span> is the last value, we get</p>
+<div class="math notranslate nohighlight">
+\[{n^2 - n} \over 2\]</div>
+<p>giving a running time of</p>
+<div class="math notranslate nohighlight">
+\[O(n^2)\]</div>
+</section>
+<section id="implementation">
+<h2>Implementation<a class="headerlink" href="#implementation" title="Link to this heading">#</a></h2>
+<p><strong>Pseudo-code</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FOR</span> <span class="n">i</span> <span class="n">FROM</span> <span class="n">length</span> <span class="n">of</span> <span class="n">array</span> <span class="n">DOWNTO</span> <span class="mi">2</span> <span class="n">DO</span>
+ <span class="n">FOR</span> <span class="n">j</span> <span class="n">FROM</span> <span class="mi">0</span> <span class="n">TO</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="n">DO</span>
+   <span class="n">IF</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="n">THEN</span>
+     <span class="n">k</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+     <span class="n">arr</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+     <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span>
+   <span class="n">END</span> <span class="n">IF</span>
+ <span class="n">END</span> <span class="n">FOR</span>
+<span class="n">END</span> <span class="n">FOR</span>
+</pre></div>
 </div>
+<p><strong>Typescript</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="n">let</span> <span class="n">i</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">let</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+      <span class="n">const</span> <span class="n">k</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+      <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+      <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>C++</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">arrayLength</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nb">int</span> <span class="n">k</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+      <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+      <span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -362,20 +421,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../index.html"
+       href="BinarySearch.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Computer-Science</p>
+        <p class="prev-next-title">Binary Search</p>
       </div>
     </a>
     <a class="right-next"
-       href="LinearSearch.html"
+       href="../../Mathematics/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Linear Search</p>
+        <p class="prev-next-title">Mathematics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -385,6 +444,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-complexity">Time Complexity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-proof">Simple Proof</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation">Implementation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
