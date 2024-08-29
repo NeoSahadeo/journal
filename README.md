@@ -30,6 +30,12 @@ source .venv/bin/[find you script]
 
 ```bash
 pip install -r requirements.txt
+```
+
+And lastly, run the start script - creatively
+named `start`.
+
+```bash
 ./start.sh
 ```
 
