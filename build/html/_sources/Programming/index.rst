@@ -1,6 +1,8 @@
 Programming
 ===========
 
+Programming language / programs related content.
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+
+   C++/index.rst

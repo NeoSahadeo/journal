@@ -1,4 +1,4 @@
-Neo's Journal 
+Neo's Journal
 =============
 
 .. toctree::
@@ -7,3 +7,4 @@ Neo's Journal
    Computer-Science/index.rst
    Mathematics/index.rst
    Physics/index.rst
+   Programming/index.rst
