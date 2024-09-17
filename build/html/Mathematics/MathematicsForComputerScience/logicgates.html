@@ -40,6 +40,7 @@
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Mathematics/MathematicsForComputerScience/logicgates';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -319,7 +320,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -335,6 +338,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nand-gate">NAND GATE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not-gate">NOT GATE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or-gate">OR GATE</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -350,12 +363,13 @@ document.write(`
 <p>What is <strong>NAND GATE</strong>?</p>
 <p>A <strong>NAND GATE</strong> is a switch that follows the following
 truth table.</p>
-<p><strong>NAND GATE</strong></p>
+<section id="nand-gate">
+<h2>NAND GATE<a class="headerlink" href="#nand-gate" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>A</p></th>
 <th class="head"><p>B</p></th>
-<th class="head"><p>OUT</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\bar{AB}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -382,20 +396,18 @@ truth table.</p>
 <p>This is a circuit diagram of the <strong>NAND GATE</strong>.</p>
 <p>Next up, is the <strong>NOT GATE</strong>. The gate should invert signals
 sent to it. Which gives us a hint of how to design the ciruit.</p>
-<p><strong>NOT GATE</strong></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}a'\\\neg a\\\sim a\\\bar{a}\end{aligned}\end{align} \]</div>
+</section>
+<section id="not-gate">
+<h2>NOT GATE<a class="headerlink" href="#not-gate" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>A</p></th>
-<th class="head"><p>OUT</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\bar{A}\)</span></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>0</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="row-odd"><td><p>1</p></td>
-<td><p>0</p></td>
-</tr>
 <tr class="row-even"><td><p>0</p></td>
 <td><p>1</p></td>
 </tr>
@@ -410,6 +422,44 @@ sent to it. Which gives us a hint of how to design the ciruit.</p>
 The inputs into the NAND GATE come from both a single input.
 It is then drawn as a triangle with a circle at the tip.</p>
 <img alt="../../_images/notgatereal.png" src="../../_images/notgatereal.png" />
+</section>
+<section id="or-gate">
+<h2>OR GATE<a class="headerlink" href="#or-gate" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A+B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The <strong>OR GATE</strong> can be built using 3 <strong>NAND GATES</strong>.
+Both inputs are mapped into a <strong>NAND GATE</strong> then the output
+of both gate are then inverted.</p>
+<img alt="../../_images/orgate.png" src="../../_images/orgate.png" />
+<p>This is a circuit diagram of the <strong>OR GATE</strong> made from <strong>NAND GATES</strong>.</p>
+<img alt="../../_images/orgatereal.png" src="../../_images/orgatereal.png" />
+<p>This is a circuit diagram symbol of the <strong>OR GATE</strong>.</p>
+</section>
 </section>
 
 
@@ -447,6 +497,23 @@ It is then drawn as a triangle with a circle at the tip.</p>
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nand-gate">NAND GATE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not-gate">NOT GATE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or-gate">OR GATE</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
