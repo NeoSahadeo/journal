@@ -31,15 +31,6 @@ This is a circuit diagram of the **NAND GATE**.
 Next up, is the **NOT GATE**. The gate should invert signals
 sent to it. Which gives us a hint of how to design the ciruit.
 
-.. math::
-   a'
-
-   \neg a
-
-   \sim a
-
-   \bar{a}
-
 NOT GATE
 ********
 
