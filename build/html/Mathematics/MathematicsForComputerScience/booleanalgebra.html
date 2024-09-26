@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Logic Gates &#8212; Neo&#39;s Journal</title>
+    <title>Boolean Algebra &#8212; Neo&#39;s Journal</title>
   
   
   
@@ -41,11 +41,11 @@
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Mathematics/MathematicsForComputerScience/logicgates';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Mathematics/MathematicsForComputerScience/booleanalgebra';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Linear Approximation" href="../linear_approximation.html" />
-    <link rel="prev" title="Boolean Algebra" href="booleanalgebra.html" />
+    <link rel="next" title="Logic Gates" href="logicgates.html" />
+    <link rel="prev" title="Mathematics For Computer Science" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -165,8 +165,8 @@
 </ul>
 </details></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Mathematics For Computer Science</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="booleanalgebra.html">Boolean Algebra</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Logic Gates</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Boolean Algebra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="logicgates.html">Logic Gates</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../linear_approximation.html">Linear Approximation</a></li>
@@ -261,7 +261,7 @@
       
       
       
-      <li><a href="../../_sources/Mathematics/MathematicsForComputerScience/logicgates.rst" target="_blank"
+      <li><a href="../../_sources/Mathematics/MathematicsForComputerScience/booleanalgebra.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -345,7 +345,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Logic Gates</h1>
+    <h1>Boolean Algebra</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -355,9 +355,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nand-gate">NAND GATE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not-gate">NOT GATE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or-gate">OR GATE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-law">Complement Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#or-gate">OR Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#and-gate">AND Gate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#double-negation-law">Double Negation Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#and-operation-and-its-rules">AND Operation and its rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or-operation-and-its-rules">OR Operation and its rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributive-laws-of-boolean-algebra">Distributive Laws of Boolean Algebra</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statement-1">Statement 1</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -369,72 +378,153 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="logic-gates">
-<h1>Logic Gates<a class="headerlink" href="#logic-gates" title="Link to this heading">#</a></h1>
-<p>All gates can be derived from the <strong>NAND GATE</strong>.</p>
-<p>What is <strong>NAND GATE</strong>?</p>
-<p>A <strong>NAND GATE</strong> is a switch that follows the following
-truth table.</p>
-<section id="nand-gate">
-<h2>NAND GATE<a class="headerlink" href="#nand-gate" title="Link to this heading">#</a></h2>
+  <section id="boolean-algebra">
+<h1>Boolean Algebra<a class="headerlink" href="#boolean-algebra" title="Link to this heading">#</a></h1>
+<p>Boolean Algebra TODO</p>
+<p><strong>What is a complement</strong></p>
+<p>A mathematical complement decribes a system where the
+elements are not within the current set.
+In binary, there is only <strong>one</strong> other complement.</p>
+<section id="complement-law">
+<h2>Complement Law<a class="headerlink" href="#complement-law" title="Link to this heading">#</a></h2>
+<p>The complement of binary number can either be 0 or 1;
+Performing an OR / AND operation yields as follows.</p>
+<section id="or-gate">
+<h3>OR Gate<a class="headerlink" href="#or-gate" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>A’</p></th>
+<th class="head"><p>A+B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="and-gate">
+<h3>AND Gate<a class="headerlink" href="#and-gate" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>A’</p></th>
+<th class="head"><p>A <span class="math notranslate nohighlight">\(\cdot\)</span> A</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="double-negation-law">
+<h2>Double Negation Law<a class="headerlink" href="#double-negation-law" title="Link to this heading">#</a></h2>
+<p>The negation law describes the NOT operation and when
+performing the operation twice yields the original
+variable value.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>A’</p></th>
+<th class="head"><p>(A’)’</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="and-operation-and-its-rules">
+<h2>AND Operation and its rules<a class="headerlink" href="#and-operation-and-its-rules" title="Link to this heading">#</a></h2>
+<p>The <strong>AND</strong> operation is True(1) if both variables are 1.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>A</p></th>
 <th class="head"><p>B</p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\bar{AB}\)</span></p></th>
+<th class="head"><p>A <span class="math notranslate nohighlight">\(\cdot\)</span> B</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>0</p></td>
 <td><p>0</p></td>
-<td><p>1</p></td>
+<td><p>0</p></td>
 </tr>
 <tr class="row-odd"><td><p>0</p></td>
 <td><p>1</p></td>
-<td><p>1</p></td>
+<td><p>0</p></td>
 </tr>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>0</p></td>
-<td><p>1</p></td>
+<td><p>0</p></td>
 </tr>
 <tr class="row-odd"><td><p>1</p></td>
 <td><p>1</p></td>
-<td><p>0</p></td>
+<td><p>1</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<img alt="../../_images/nandgate.png" src="../../_images/nandgate.png" />
-<p>This is a circuit diagram of the <strong>NAND GATE</strong>.</p>
-<p>Next up, is the <strong>NOT GATE</strong>. The gate should invert signals
-sent to it. Which gives us a hint of how to design the ciruit.</p>
+<p>The AND operations follows these laws:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Annulment Law</dt><dd><ul>
+<li><p>A <span class="math notranslate nohighlight">\(\cdot\)</span> 0 = 0</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Identity Property</dt><dd><ul>
+<li><p>A <span class="math notranslate nohighlight">\(\cdot\)</span> 1 = A</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Idempotent Property</dt><dd><ul>
+<li><p>A <span class="math notranslate nohighlight">\(\cdot\)</span> A = A</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Complement Property</dt><dd><ul>
+<li><p>A <span class="math notranslate nohighlight">\(\cdot\)</span> A` = 0</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
-<section id="not-gate">
-<h2>NOT GATE<a class="headerlink" href="#not-gate" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>A</p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\bar{A}\)</span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>0</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="row-odd"><td><p>1</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<img alt="../../_images/notgate.png" src="../../_images/notgate.png" />
-<p>This is a circuit diagram of the <strong>NOT GATE</strong>.
-The inputs into the NAND GATE come from both a single input.
-It is then drawn as a triangle with a circle at the tip.</p>
-<img alt="../../_images/notgatereal.png" src="../../_images/notgatereal.png" />
-</section>
-<section id="or-gate">
-<h2>OR GATE<a class="headerlink" href="#or-gate" title="Link to this heading">#</a></h2>
+<section id="or-operation-and-its-rules">
+<h2>OR Operation and its rules<a class="headerlink" href="#or-operation-and-its-rules" title="Link to this heading">#</a></h2>
+<p>The <strong>OR</strong> operation is True(1) if either one of the
+variables are 1.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>A</p></th>
@@ -462,13 +552,44 @@ It is then drawn as a triangle with a circle at the tip.</p>
 </tbody>
 </table>
 </div>
-<p>The <strong>OR GATE</strong> can be built using 3 <strong>NAND GATES</strong>.
-Both inputs are mapped into a <strong>NAND GATE</strong> then the output
-of both gate are then inverted.</p>
-<img alt="../../_images/orgate.png" src="../../_images/orgate.png" />
-<p>This is a circuit diagram of the <strong>OR GATE</strong> made from <strong>NAND GATES</strong>.</p>
-<img alt="../../_images/orgatereal.png" src="../../_images/orgatereal.png" />
-<p>This is a circuit diagram symbol of the <strong>OR GATE</strong>.</p>
+<p>The OR operations follows these laws:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Annulment Law</dt><dd><ul>
+<li><p>A + 0 = A</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Identity Property</dt><dd><ul>
+<li><p>A + 1 = 1</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Idempotent Property</dt><dd><ul>
+<li><p>A + A = A</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Complement Property</dt><dd><ul>
+<li><p>A + A` = 1</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="distributive-laws-of-boolean-algebra">
+<h2>Distributive Laws of Boolean Algebra<a class="headerlink" href="#distributive-laws-of-boolean-algebra" title="Link to this heading">#</a></h2>
+<p>There are two statements under the distributive laws.</p>
+<section id="statement-1">
+<h3>Statement 1<a class="headerlink" href="#statement-1" title="Link to this heading">#</a></h3>
+</section>
 </section>
 </section>
 
@@ -484,20 +605,20 @@ of both gate are then inverted.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="booleanalgebra.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Boolean Algebra</p>
+        <p class="prev-next-title">Mathematics For Computer Science</p>
       </div>
     </a>
     <a class="right-next"
-       href="../linear_approximation.html"
+       href="logicgates.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Linear Approximation</p>
+        <p class="prev-next-title">Logic Gates</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -517,9 +638,18 @@ of both gate are then inverted.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nand-gate">NAND GATE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#not-gate">NOT GATE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or-gate">OR GATE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-law">Complement Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#or-gate">OR Gate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#and-gate">AND Gate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#double-negation-law">Double Negation Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#and-operation-and-its-rules">AND Operation and its rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or-operation-and-its-rules">OR Operation and its rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributive-laws-of-boolean-algebra">Distributive Laws of Boolean Algebra</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statement-1">Statement 1</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
