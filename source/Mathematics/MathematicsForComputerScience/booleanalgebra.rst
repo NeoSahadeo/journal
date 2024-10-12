@@ -29,7 +29,7 @@ A mathematical complement decribes a system where the
 elements are not within the current set.
 In binary, there is only **one** other complement.
 
-Proofs
+Laws
 ******
 
 Annulment Law
@@ -198,6 +198,32 @@ AND Gate
 Commutative Law
 ###############
 
+The commutative law states that the order of operation
+does not matter with either **AND** or **OR**
+
+.. math::
+
+   A+B = B+A
+
+.. math::
+
+   A \cdot B = B \cdot A
+
+Proof
+-----
+
++---+---+-----+----+-----+----+
+| A | B | A+B | AB | B+A | BA |
++===+===+=====+====+=====+====+
+| 0 | 0 | 0   | 0  | 0   | 0  |
++---+---+-----+----+-----+----+
+| 0 | 1 | 1   | 0  | 1   | 0  |
++---+---+-----+----+-----+----+
+| 1 | 0 | 1   | 0  | 1   | 0  |
++---+---+-----+----+-----+----+
+| 1 | 1 | 1   | 1  | 1   | 1  |
++---+---+-----+----+-----+----+
+
 Double Negation Law
 ###################
 
@@ -214,8 +240,104 @@ variable value.
 | 1 | 0  | 1     |
 +---+----+-------+
 
+
+Distributive Laws
+#################
+
+There are two statements under the distributive laws.
+
+.. math::
+
+   A(B+C) = A \cdot B + A \cdot C
+
+.. math::
+
+   A + B \cdot C = (A + B) \cdot (A + C)
+
+My logical reasoning :math:`A + B \cdot C = (A + B) \cdot (A + C)`
+------------------------------------------------------------------
+
+Lets take the result :math:`(a+b)(a+c)` and expand it.
+
+.. math::
+
+   aa+ac+ba+bc
+
+:math:`aa` simplifies to :math:`a` (indempotent law)
+
+We can then group `a`'s
+
+.. math::
+
+   a(1+c) + ba + bc
+
+:math:`1+c` becomes 1 (annulment law) which leaves us with
+after applying the identity law
+
+.. math::
+
+   a + ba + bc
+
+we can repeat the previous step of seperating out the `a`'s
+
+.. math::
+
+   a(1+b) + bc
+   =a + bc
+
+So we can then see any expression in the form of :math:`a + x`
+where :math:`x` can be any value is directly equivalent to
+:math:`a+ax+x` such that :math:`a(1+x)+x = a+1`
+
+
+Proof :math:`A(B+C) = A \cdot B + A \cdot C`
+--------------------------------------------
+
++---+---+---+----+----+-------+-----+--------+
+| A | B | C | AB | AC | AB+AC | B+C | A(B+C) |
++===+===+===+====+====+=======+=====+========+
+| 0 | 0 | 0 | 0  | 0  | 0     | 0   | 0      |
++---+---+---+----+----+-------+-----+--------+
+| 0 | 0 | 1 | 0  | 0  | 0     | 1   | 0      |
++---+---+---+----+----+-------+-----+--------+
+| 0 | 1 | 0 | 0  | 0  | 0     | 1   | 0      |
++---+---+---+----+----+-------+-----+--------+
+| 0 | 1 | 1 | 0  | 0  | 0     | 1   | 0      |
++---+---+---+----+----+-------+-----+--------+
+| 1 | 0 | 0 | 0  | 0  | 0     | 0   | 0      |
++---+---+---+----+----+-------+-----+--------+
+| 1 | 0 | 1 | 0  | 1  | 1     | 1   | 1      |
++---+---+---+----+----+-------+-----+--------+
+| 1 | 1 | 0 | 1  | 0  | 1     | 1   | 1      |
++---+---+---+----+----+-------+-----+--------+
+| 1 | 1 | 1 | 1  | 1  | 1     | 1   | 1      |
++---+---+---+----+----+-------+-----+--------+
+
+Proof :math:`A + B \cdot C = (A + B) \cdot (A + C)`
+---------------------------------------------------
+
++---+---+---+----+------+-----+-----+------------+
+| A | B | C | BC | A+BC | A+B | A+C | (A+B)(A+C) |
++===+===+===+====+======+=====+=====+============+
+| 0 | 0 | 0 | 0  | 0    | 0   | 0   | 0          |
++---+---+---+----+------+-----+-----+------------+
+| 0 | 0 | 1 | 0  | 0    | 0   | 1   | 0          |
++---+---+---+----+------+-----+-----+------------+
+| 0 | 1 | 0 | 0  | 0    | 1   | 0   | 0          |
++---+---+---+----+------+-----+-----+------------+
+| 0 | 1 | 1 | 1  | 1    | 1   | 1   | 1          |
++---+---+---+----+------+-----+-----+------------+
+| 1 | 0 | 0 | 0  | 1    | 1   | 1   | 1          |
++---+---+---+----+------+-----+-----+------------+
+| 1 | 0 | 1 | 0  | 1    | 1   | 1   | 1          |
++---+---+---+----+------+-----+-----+------------+
+| 1 | 1 | 0 | 0  | 1    | 1   | 1   | 1          |
++---+---+---+----+------+-----+-----+------------+
+| 1 | 1 | 1 | 1  | 1    | 1   | 1   | 1          |
++---+---+---+----+------+-----+-----+------------+
+
 AND Operation and its rules
-***************************
+###########################
 
 The **AND** operation is True(1) if both variables are 1.
 
@@ -273,11 +395,3 @@ The OR operations follows these laws:
     - A + A = A
 - Complement Property
     - A + A` = 1
-
-Distributive Laws of Boolean Algebra
-************************************
-
-There are two statements under the distributive laws.
-
-Statement 1
-^^^^^^^^^^^

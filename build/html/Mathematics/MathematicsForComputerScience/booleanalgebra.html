@@ -355,7 +355,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proofs">Proofs</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laws">Laws</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#annulment-law">Annulment Law</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zero-annulment">Zero Annulment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-annulment">One Annulment</a></li>
@@ -376,13 +376,21 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">AND Gate</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commutative-law">Commutative Law</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-negation-law">Double Negation Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commutative-law">Commutative Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#proof">Proof</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#and-operation-and-its-rules">AND Operation and its rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-negation-law">Double Negation Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributive-laws">Distributive Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#my-logical-reasoning-a-b-cdot-c-a-b-cdot-a-c">My logical reasoning <span class="math notranslate nohighlight">\(A + B \cdot C = (A + B) \cdot (A + C)\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-a-b-c-a-cdot-b-a-cdot-c">Proof <span class="math notranslate nohighlight">\(A(B+C) = A \cdot B + A \cdot C\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-a-b-cdot-c-a-b-cdot-a-c">Proof <span class="math notranslate nohighlight">\(A + B \cdot C = (A + B) \cdot (A + C)\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#and-operation-and-its-rules">AND Operation and its rules</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or-operation-and-its-rules">OR Operation and its rules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributive-laws-of-boolean-algebra">Distributive Laws of Boolean Algebra</a></li>
 </ul>
             </nav>
         </div>
@@ -419,8 +427,8 @@ values; 0 and 1 (off and on).</p>
 <p>A mathematical complement decribes a system where the
 elements are not within the current set.
 In binary, there is only <strong>one</strong> other complement.</p>
-<section id="proofs">
-<h2>Proofs<a class="headerlink" href="#proofs" title="Link to this heading">#</a></h2>
+<section id="laws">
+<h2>Laws<a class="headerlink" href="#laws" title="Link to this heading">#</a></h2>
 <section id="annulment-law">
 <h3>Annulment Law<a class="headerlink" href="#annulment-law" title="Link to this heading">#</a></h3>
 <p>The definition of annulment from Google</p>
@@ -656,6 +664,57 @@ Performing an OR / AND operation yields as follows.</p>
 </section>
 <section id="commutative-law">
 <h3>Commutative Law<a class="headerlink" href="#commutative-law" title="Link to this heading">#</a></h3>
+<p>The commutative law states that the order of operation
+does not matter with either <strong>AND</strong> or <strong>OR</strong></p>
+<div class="math notranslate nohighlight">
+\[A+B = B+A\]</div>
+<div class="math notranslate nohighlight">
+\[A \cdot B = B \cdot A\]</div>
+<section id="proof">
+<h4>Proof<a class="headerlink" href="#proof" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>A+B</p></th>
+<th class="head"><p>AB</p></th>
+<th class="head"><p>B+A</p></th>
+<th class="head"><p>BA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </section>
 <section id="double-negation-law">
 <h3>Double Negation Law<a class="headerlink" href="#double-negation-law" title="Link to this heading">#</a></h3>
@@ -682,9 +741,219 @@ variable value.</p>
 </table>
 </div>
 </section>
+<section id="distributive-laws">
+<h3>Distributive Laws<a class="headerlink" href="#distributive-laws" title="Link to this heading">#</a></h3>
+<p>There are two statements under the distributive laws.</p>
+<div class="math notranslate nohighlight">
+\[A(B+C) = A \cdot B + A \cdot C\]</div>
+<div class="math notranslate nohighlight">
+\[A + B \cdot C = (A + B) \cdot (A + C)\]</div>
+<section id="my-logical-reasoning-a-b-cdot-c-a-b-cdot-a-c">
+<h4>My logical reasoning <span class="math notranslate nohighlight">\(A + B \cdot C = (A + B) \cdot (A + C)\)</span><a class="headerlink" href="#my-logical-reasoning-a-b-cdot-c-a-b-cdot-a-c" title="Link to this heading">#</a></h4>
+<p>Lets take the result <span class="math notranslate nohighlight">\((a+b)(a+c)\)</span> and expand it.</p>
+<div class="math notranslate nohighlight">
+\[aa+ac+ba+bc\]</div>
+<p><span class="math notranslate nohighlight">\(aa\)</span> simplifies to <span class="math notranslate nohighlight">\(a\)</span> (indempotent law)</p>
+<p>We can then group <cite>a</cite>’s</p>
+<div class="math notranslate nohighlight">
+\[a(1+c) + ba + bc\]</div>
+<p><span class="math notranslate nohighlight">\(1+c\)</span> becomes 1 (annulment law) which leaves us with
+after applying the identity law</p>
+<div class="math notranslate nohighlight">
+\[a + ba + bc\]</div>
+<p>we can repeat the previous step of seperating out the <cite>a</cite>’s</p>
+<div class="math notranslate nohighlight">
+\[a(1+b) + bc
+=a + bc\]</div>
+<p>So we can then see any expression in the form of <span class="math notranslate nohighlight">\(a + x\)</span>
+where <span class="math notranslate nohighlight">\(x\)</span> can be any value is directly equivalent to
+<span class="math notranslate nohighlight">\(a+ax+x\)</span> such that <span class="math notranslate nohighlight">\(a(1+x)+x = a+1\)</span></p>
+</section>
+<section id="proof-a-b-c-a-cdot-b-a-cdot-c">
+<h4>Proof <span class="math notranslate nohighlight">\(A(B+C) = A \cdot B + A \cdot C\)</span><a class="headerlink" href="#proof-a-b-c-a-cdot-b-a-cdot-c" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>C</p></th>
+<th class="head"><p>AB</p></th>
+<th class="head"><p>AC</p></th>
+<th class="head"><p>AB+AC</p></th>
+<th class="head"><p>B+C</p></th>
+<th class="head"><p>A(B+C)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="proof-a-b-cdot-c-a-b-cdot-a-c">
+<h4>Proof <span class="math notranslate nohighlight">\(A + B \cdot C = (A + B) \cdot (A + C)\)</span><a class="headerlink" href="#proof-a-b-cdot-c-a-b-cdot-a-c" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>C</p></th>
+<th class="head"><p>BC</p></th>
+<th class="head"><p>A+BC</p></th>
+<th class="head"><p>A+B</p></th>
+<th class="head"><p>A+C</p></th>
+<th class="head"><p>(A+B)(A+C)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </section>
 <section id="and-operation-and-its-rules">
-<h2>AND Operation and its rules<a class="headerlink" href="#and-operation-and-its-rules" title="Link to this heading">#</a></h2>
+<h3>AND Operation and its rules<a class="headerlink" href="#and-operation-and-its-rules" title="Link to this heading">#</a></h3>
 <p>The <strong>AND</strong> operation is True(1) if both variables are 1.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -744,6 +1013,7 @@ variable value.</p>
 </dl>
 </li>
 </ul>
+</section>
 </section>
 <section id="or-operation-and-its-rules">
 <h2>OR Operation and its rules<a class="headerlink" href="#or-operation-and-its-rules" title="Link to this heading">#</a></h2>
@@ -808,10 +1078,6 @@ variables are 1.</p>
 </li>
 </ul>
 </section>
-<section id="distributive-laws-of-boolean-algebra">
-<h2>Distributive Laws of Boolean Algebra<a class="headerlink" href="#distributive-laws-of-boolean-algebra" title="Link to this heading">#</a></h2>
-<p>There are two statements under the distributive laws.</p>
-</section>
 </section>
 
 
@@ -859,7 +1125,7 @@ variables are 1.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proofs">Proofs</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laws">Laws</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#annulment-law">Annulment Law</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zero-annulment">Zero Annulment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-annulment">One Annulment</a></li>
@@ -880,13 +1146,21 @@ variables are 1.</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">AND Gate</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commutative-law">Commutative Law</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-negation-law">Double Negation Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commutative-law">Commutative Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#proof">Proof</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#and-operation-and-its-rules">AND Operation and its rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-negation-law">Double Negation Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributive-laws">Distributive Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#my-logical-reasoning-a-b-cdot-c-a-b-cdot-a-c">My logical reasoning <span class="math notranslate nohighlight">\(A + B \cdot C = (A + B) \cdot (A + C)\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-a-b-c-a-cdot-b-a-cdot-c">Proof <span class="math notranslate nohighlight">\(A(B+C) = A \cdot B + A \cdot C\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-a-b-cdot-c-a-b-cdot-a-c">Proof <span class="math notranslate nohighlight">\(A + B \cdot C = (A + B) \cdot (A + C)\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#and-operation-and-its-rules">AND Operation and its rules</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#or-operation-and-its-rules">OR Operation and its rules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributive-laws-of-boolean-algebra">Distributive Laws of Boolean Algebra</a></li>
 </ul>
   </nav></div>
 
