@@ -29,6 +29,25 @@ A mathematical complement decribes a system where the
 elements are not within the current set.
 In binary, there is only **one** other complement.
 
+Boolean Postulates
+******************
+
+:math:`0 \cdot 0 = 0`
+
+:math:`1 \cdot 0 = 0`
+
+:math:`1 \cdot 1 = 1`
+
+:math:`0 + 0 = 0`
+
+:math:`1 + 0 = 1`
+
+:math:`1 + 1 = 1`
+
+:math:`1' = 0`
+
+:math:`0' = 1`
+
 Laws
 ******
 
@@ -175,24 +194,24 @@ Performing an OR / AND operation yields as follows.
 OR Gate
 -------
 
-+---+---+-----+
-| A | A'| A+B |
-+===+===+=====+
-| 0 | 1 | 1   |
-+---+---+-----+
-| 1 | 0 | 1   |
-+---+---+-----+
++---+---+------+
+| A | A'| A+A' |
++===+===+======+
+| 0 | 1 | 1    |
++---+---+------+
+| 1 | 0 | 1    |
++---+---+------+
 
 AND Gate
 --------
 
-+---+---+------------------+
-| A | A'| A :math:`\cdot` A|
-+===+===+==================+
-| 0 | 1 | 0                |
-+---+---+------------------+
-| 1 | 0 | 0                |
-+---+---+------------------+
++---+---+-------------------+
+| A | A'| A :math:`\cdot` A'|
++===+===+===================+
+| 0 | 1 | 0                 |
++---+---+-------------------+
+| 1 | 0 | 0                 |
++---+---+-------------------+
 
 
 Commutative Law
@@ -224,8 +243,8 @@ Proof
 | 1 | 1 | 1   | 1  | 1   | 1  |
 +---+---+-----+----+-----+----+
 
-Double Negation Law
-###################
+Involution (Double Negation) Law
+################################
 
 The negation law describes the NOT operation and when
 performing the operation twice yields the original
@@ -253,41 +272,6 @@ There are two statements under the distributive laws.
 .. math::
 
    A + B \cdot C = (A + B) \cdot (A + C)
-
-My logical reasoning :math:`A + B \cdot C = (A + B) \cdot (A + C)`
-------------------------------------------------------------------
-
-Lets take the result :math:`(a+b)(a+c)` and expand it.
-
-.. math::
-
-   aa+ac+ba+bc
-
-:math:`aa` simplifies to :math:`a` (indempotent law)
-
-We can then group `a`'s
-
-.. math::
-
-   a(1+c) + ba + bc
-
-:math:`1+c` becomes 1 (annulment law) which leaves us with
-after applying the identity law
-
-.. math::
-
-   a + ba + bc
-
-we can repeat the previous step of seperating out the `a`'s
-
-.. math::
-
-   a(1+b) + bc
-   =a + bc
-
-So we can then see any expression in the form of :math:`a + x`
-where :math:`x` can be any value is directly equivalent to
-:math:`a+ax+x` such that :math:`a(1+x)+x = a+1`
 
 
 Proof :math:`A(B+C) = A \cdot B + A \cdot C`
@@ -336,8 +320,52 @@ Proof :math:`A + B \cdot C = (A + B) \cdot (A + C)`
 | 1 | 1 | 1 | 1  | 1    | 1   | 1   | 1          |
 +---+---+---+----+------+-----+-----+------------+
 
+Absorptive Law
+##############
+
+The absorptive law describes the reduction in an
+expression by absorbing like terms.
+
+.. math::
+
+   A + AB = A(1+B) = A
+
+Associative Law
+###############
+
+The associative law describes the removal of brackets
+and regrouping of variables in an expression.
+
+OR
+--
+
+.. math::
+
+   A + (B+C) = (A+B)+C
+
+AND
+---
+
+.. math::
+
+   A(BC) = (AB)C
+
+De Morgan's Laws
+################
+
+.. math::
+ (A+B)' = A' \cdot B'
+
+.. math::
+ (AB)' = A'+B'
+
+Proof
+-----
+
+TODO - Adding in after learning set theory
+
 AND Operation and its rules
-###########################
+***************************
 
 The **AND** operation is True(1) if both variables are 1.
 
