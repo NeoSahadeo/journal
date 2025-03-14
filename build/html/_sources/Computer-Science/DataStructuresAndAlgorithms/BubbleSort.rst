@@ -111,3 +111,16 @@ Implementation
       }
     }
   }
+
+**Python**
+
+.. code::
+
+  for x in range(0, len(array)):
+      for y in range(0, len(array) - 1 - x):
+          if array[y] < array[y + 1]:
+              temp = array[y]
+              array[y] = array[y + 1]
+              array[y + 1] = temp
+
+.. image:: /images/bubble_sort_22_02_2025.webp

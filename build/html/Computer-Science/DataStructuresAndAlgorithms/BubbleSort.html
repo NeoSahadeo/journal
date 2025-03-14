@@ -199,6 +199,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Programming/Python/SetupVirtualEnvironment/windows.html">Setting up a virtual environment in Windows</a></li>
 </ul>
 </details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../Programming/Python/Testing/index.html">Python Testing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../Programming/Python/Testing/Pytest/index.html">Pytest Testing</a></li>
+</ul>
+</details></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Programming/Python/tcpclient.html">TCP Client in Python</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Programming/Python/tcpserver.html">TCP Server in Python</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Programming/Python/udpclient.html">UDP Client in Python</a></li>
@@ -441,6 +445,16 @@ where <span class="math notranslate nohighlight">\(N+N-1\)</span> is the last va
 <span class="p">}</span>
 </pre></div>
 </div>
+<p><strong>Python</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">x</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">array</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">[</span><span class="n">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">y</span><span class="p">]</span>
+            <span class="n">array</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="n">array</span><span class="p">[</span><span class="n">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span>
+</pre></div>
+</div>
+<img alt="../../_images/bubble_sort_22_02_2025.webp" src="../../_images/bubble_sort_22_02_2025.webp" />
 </section>
 </section>
 
