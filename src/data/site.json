@@ -11,12 +11,12 @@
   "headerLinks": [
     {
       "text": "Posts",
-      "url": "./journal/posts",
+      "url": "../journal/posts",
       "external": false
     },
     {
       "text": "About",
-      "url": "./journal/about",
+      "url": "../journal/about",
       "external": false
     }
   ],
