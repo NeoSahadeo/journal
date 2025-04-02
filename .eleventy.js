@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -26,6 +27,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   // setup mermaid markdown highlighter
   const highlighter = eleventyConfig.markdownHighlighter;
@@ -129,6 +131,7 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["html", "njk", "md"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    baseUrl: "https://neosahadeo.github.io/journal/",
+    // baseUrl: isProd ? "https://neosahadeo.github.io/journal/" : "",
+    pathPrefix: "/journal/",
   };
 };
