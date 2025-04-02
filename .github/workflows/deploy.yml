@@ -1,0 +1,46 @@
+name: Launch Site
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  deploy:
+      permissions:
+        contents: read
+        pages: write
+        id-token: write
+      runs-on: ubuntu-latest
+
+      name: Build and deploy
+      steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        - uses: actions/checkout@v4
+
+        - name: Configure GitHub Pages
+          uses: actions/configure-pages@v5.0.0
+
+        - name: NPM or Yarn install with caching
+          uses: bahmutov/npm-install@v1.10.8
+        - run: |
+            echo "Installing Dependencies"
+            yarn install
+            echo "Building source"
+            yarn build
+
+        - name: Upload GitHub Pages artifact
+          uses: actions/upload-pages-artifact@v3.0.1
+          with:
+            # upload entire directory
+            path: 'public'
+
+        - name: Deploy GitHub Pages site
+          uses: actions/deploy-pages@v4.0.5
