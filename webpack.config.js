@@ -53,9 +53,7 @@ module.exports = {
   },
 
   plugins: [
-    new WebpackManifestPlugin({
-      publicPath: "https://neosahadeo.github.io/journal/assets/",
-    }),
+    new WebpackManifestPlugin({ publicPath: "/assets/" }),
     new MiniCssExtractPlugin({ filename: `${baseFilename}.css` }),
   ],
 };

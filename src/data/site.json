@@ -7,16 +7,16 @@
     "email": "neosahadeo@protonmail.com",
     "twitterHandle": "NeoSahadeo_"
   },
-  "defaultSocialImage": "https://neosahadeo.github.io/journal/images/me.jpg",
+  "defaultSocialImage": "/images/me.jpg",
   "headerLinks": [
     {
       "text": "Journal",
-      "url": "https://neosahadeo.github.io/journal/journal",
+      "url": "/journal",
       "external": false
     },
     {
       "text": "About",
-      "url": "https://neosahadeo.github.io/journal/about",
+      "url": "/about",
       "external": false
     }
   ],
@@ -40,7 +40,7 @@
   "footerLinks": [
     {
       "text": "RSS",
-      "url": "https://neosahadeo.github.io/journal/feed.xml",
+      "url": "/feed.xml",
       "external": true
     }
   ],
