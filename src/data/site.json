@@ -10,13 +10,13 @@
   "defaultSocialImage": "/images/me.jpg",
   "headerLinks": [
     {
-      "text": "Journal",
-      "url": "/journal",
+      "text": "Posts",
+      "url": "posts",
       "external": false
     },
     {
       "text": "About",
-      "url": "/about",
+      "url": "about",
       "external": false
     }
   ],
