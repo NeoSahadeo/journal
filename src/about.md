@@ -1,14 +1,19 @@
 ---
-title: About Aidan Charles Powell
+title: About Neo S. Sahadeo
 layout: about.njk
-name: Aidan Charles Powell
-image: '/images/me.jpeg'
+name: Neo Sahadeo
+image: '/images/me.jpg'
 ---
 
-Aidan Charles Powell is a 23-year-old health centre receptionist who enjoys watching television, eating out and social media. He is generous and giving, but can also be very rude and a bit lazy.
 
-He is a Jedi who defines himself as straight. He has a degree in medicine. He is a vegetarian. He is obsessed with vintage dresses.
+Hey, I am a guy with a hundred different hobbies, so writing an "About Me" section is particularly tough. What in the world describes me best? I'm an avid enjoyer of hikes, software, cycling, languages, guitar, music, and watching xQc [düd]. Nothing beats a cycle and trail combo on a Sunday morning.
 
-He grew up in a middle class neighbourhood. After his mother died when he was young, he was raised by his father
+Programming tools and learning the ins and outs of the software landscape are guilty pleasures of mine. Sitting down and reading through an O'Reilly book and trying to implement that is nerdy fun.
 
-He is currently married to Maureen Erika Quinn. Maureen is 13 years older than him and works as a sales assistant.
+Music drives my life—whether it's a quick trip around the apartment or a six-hour train ride, I'll always have jammers playing.
+
+Current favourite song:
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2C4jYVZId6mxISa3HrBvGM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+Here's a photo from my hike:
+<img src="/images/hikes/20250205_131145.webp" alt="Hike on Lower-Ballymakellet" style="width: 100%;">

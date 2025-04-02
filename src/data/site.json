@@ -1,17 +1,17 @@
 {
-  "name": "Eleventy Duo",
-  "description": "Eleventy Duo is a minimal and beautiful Eleventy theme for personal blogs.",
-  "url": "https://eleventyduo.netlify.app",
+  "name": "Neo's Journal",
+  "description": "This is my public journal of things I find fascinating or mildly interesting that I suppose I should share with the world.",
+  "url": "https://neosahadeo.github.io/journal/",
   "author": {
-    "name": "Author Name",
-    "email": "author@site.com",
-    "twitterHandle": "author_handle"
+    "name": "Neo Sahadeo",
+    "email": "neosahadeo@protonmail.com",
+    "twitterHandle": "NeoSahadeo_"
   },
-  "defaultSocialImage": "/images/default-social-image.png",
+  "defaultSocialImage": "/images/me.jpg",
   "headerLinks": [
     {
-      "text": "Blog",
-      "url": "/blog",
+      "text": "Journal",
+      "url": "/journal",
       "external": false
     },
     {
@@ -23,17 +23,17 @@
   "socialLinks": [
     {
       "text": "Instagram",
-      "url": "https://instagram.com/",
+      "url": "https://instagram.com/neosahadeo",
       "external": true
     },
     {
       "text": "GitHub",
-      "url": "https://github.com/yinkakun/eleventy-duo",
+      "url": "https://github.com/NeoSahadeo/",
       "external": true
     },
     {
-      "text": "Twitter",
-      "url": "https://twitter.com/",
+      "text": "X",
+      "url": "https://x.com/NeoSahadeo_/",
       "external": true
     }
   ],
