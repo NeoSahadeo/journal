@@ -1,7 +1,7 @@
 ---
 date: 2025-04-03
 title: Huffman Coding
-tags: 'tags: ["post"]'
+tags: data-compression
 ---
 > Huffman coding is a technique for compressing data without losing any of the details (_Huffman Coding Algorithm_, n.d.)
 
