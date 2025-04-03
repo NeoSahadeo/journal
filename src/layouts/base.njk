@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
+    <link rel="canonical" href={{ page.url | absoluteUrl(site.url) }}>
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Feed">
 
     {% bundledcss %}
@@ -46,8 +46,8 @@
       {% set socialImage = site.defaultSocialImage %}
     {% endif %}
     {% if socialImage %}
-      <meta property="og:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
-      <meta name="twitter:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
+      <meta property="og:image" content="{{ socialImage | absoluteUrl(site.url) }}"/>
+      <meta name="twitter:image" content="{{ socialImage | absoluteUrl(site.url) }}"/>
     {% endif %}
 
     {# Add mermaid -- start #}
@@ -110,7 +110,7 @@
                 {% endif %}
 
                 <li>
-                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
+                  <a href="{{ item.url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
                 </li>
               {% endfor %}
             {% endif %}

@@ -22,7 +22,7 @@ layout: base.njk
     <div class="post__tags">
       {% for tag in tags | pageTags %}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}">#{{ tag }}</a>
+        <a href="{{ tagUrl }}">#{{ tag }}</a>
       {% endfor %}
     </div>
 
@@ -30,7 +30,7 @@ layout: base.njk
       {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
       {%- if nextPost %}
 
-        <a href="{{ nextPost.url | url }}">
+        <a href="{{ nextPost.url }}">
           <span>←</span>
           <span>{{ nextPost.data.title }}</span>
         </a>
@@ -40,7 +40,7 @@ layout: base.njk
       {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
       {%- if previousPost %}
 
-        <a href="{{ previousPost.url | url }}">
+        <a href="{{ previousPost.url }}">
           <span>{{ previousPost.data.title }}</span>
           <span>→</span>
         </a>

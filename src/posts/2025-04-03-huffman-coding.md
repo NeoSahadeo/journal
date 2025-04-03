@@ -8,7 +8,7 @@ tags: data-compression
 
 # History
 
-![](https://ieeecs-media.computer.org/wp-media/2018/04/11204517/davidhuffman-wm-e1523479537419.jpg)
+![](/images/articles/davidhuffman-wm-e1523479537419.webp)
 
 David A. Huffman, an electrical engineer from Ohio, is the creator of _Huffman Coding._ He received numerous awards, latest of which, the Richard Hamming Medal in 1999.
 

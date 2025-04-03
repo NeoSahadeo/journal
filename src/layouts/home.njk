@@ -18,7 +18,7 @@ layout: base
           {% endif %}
 
           <li>
-            <a href="{{ item.url | url }}" {{ externalAttribute | safe }}>{{ item.text }}</a>
+            <a href="{{ item.url }}" {{ externalAttribute | safe }}>{{ item.text }}</a>
           </li>
         {% endfor %}
       </ul>
