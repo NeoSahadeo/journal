@@ -1,19 +1,21 @@
 ---
-published: false
+published: true
 date: 2025-04-03
 title: Huffman Coding
 ---
+> Huffman coding is a technique for compressing data without losing any of the details (_Huffman Coding Algorithm_, n.d.)
+
 # History
 
-David A. Huffman, an electrical engineer from Ohio, is the creator of _Huffman Coding._ He received numerous awards, latest of which, the Richard Hamming Medal in 1999.![](https://ieeecs-media.computer.org/wp-media/2018/04/11204517/davidhuffman-wm-e1523479537419.jpg)
+![](https://ieeecs-media.computer.org/wp-media/2018/04/11204517/davidhuffman-wm-e1523479537419.jpg)
+
+David A. Huffman, an electrical engineer from Ohio, is the creator of _Huffman Coding._ He received numerous awards, latest of which, the Richard Hamming Medal in 1999.
 
 Sadly, Mr Huffman passed away in 1999 after battling cancer.
 
 # What is a Huffman Code
 
 A Huffman code is a type of code that is used for lossless compression. Which means all data compressed can be used to reconstruct bit-for-bit the exact data before the compression.
-
-> Huffman coding is a technique for compressing data without losing any of the details (_Huffman Coding Algorithm_, n.d.)
 
 ## Example:
 
@@ -31,7 +33,6 @@ Where ASCII representation of the characters follow:
 
 01000100 D
 
-  
 The last 5 bits repeat 01000, which can be removed.
 
 001 A
