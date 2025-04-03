@@ -2,7 +2,7 @@
 title: About Neo S. Sahadeo
 layout: about.njk
 name: Neo Sahadeo
-image: 'https://neosahadeo.github.io/journal/images/me.jpg'
+image: '/images/me.jpg'
 ---
 
 

@@ -131,7 +131,6 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["html", "njk", "md"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    // baseUrl: isProd ? "https://neosahadeo.github.io/journal/" : "",
-    pathPrefix: "/journal/",
+    pathPrefix: "journal",
   };
 };

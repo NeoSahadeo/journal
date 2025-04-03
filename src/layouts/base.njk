@@ -61,7 +61,7 @@
       <header class="header">
         <div class="header__content">
           <h1 class="site-title">
-            <a href={{ "/" | url }}>
+            <a href="/">
               {{site.name}}
             </a>
           </h1>
@@ -82,7 +82,7 @@
                   {% endif %}
 
                   <li class="nav-item">
-                    <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ item.text }}</a>
+                    <a href="{{ item.url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ item.text }}</a>
                   </li>
                 {% endfor %}
               </ul>
@@ -130,16 +130,6 @@
               {% endfor %}
             {% endif %}
           </ul>
-
-          {% if site.showFooterAttribution %}
-      <!--       <p class="footer__attribution"> -->
-      <!--     Created by -->
-      <!-- <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka,</a> -->
-      <!--  Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty,</a> -->
-      <!--   Checkout <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">project's github repo </a> -->
-      <!--       </p> -->
-          {% endif %}
-
         </div>
       </div>
 
