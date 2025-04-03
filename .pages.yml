@@ -9,11 +9,6 @@ content:
     view:
       fields: [ title, published, date ]
     fields:
-      - name: featured_post
-        label: Featured Post
-        type: reference
-        options:
-          collection: posts
       - name: date
         label: Date
         type: date
