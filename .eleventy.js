@@ -31,11 +31,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
-  eleventyConfig.setLibrary(
-    "md",
-    markdownIt().use(katex, { output: "mathml" }),
-  );
-
   // setup mermaid markdown highlighter
   const highlighter = eleventyConfig.markdownHighlighter;
   eleventyConfig.addMarkdownHighlighter((str, language) => {
@@ -125,6 +120,13 @@ module.exports = function (eleventyConfig) {
         return !generalTags.includes(tag);
       });
   });
+
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt({
+      html: true, // Enable HTML tags in Markdown
+    }).use(katex, { output: "mathml" }),
+  );
 
   return {
     dir: {
