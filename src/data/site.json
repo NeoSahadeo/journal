@@ -36,12 +36,5 @@
       "url": "https://x.com/NeoSahadeo_/",
       "external": true
     }
-  ],
-  "footerLinks": [
-    {
-      "text": "RSS",
-      "url": "/feed.xml",
-      "external": true
-    }
   ]
 }

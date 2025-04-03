@@ -114,25 +114,9 @@
                 </li>
               {% endfor %}
             {% endif %}
-
-            {% if site.footerLinks %}
-
-              {% for item in site.footerLinks %}
-                {% set externalAttribute = '' %}
-
-                {% if item.external %}
-                  {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-                {% endif %}
-
-                <li>
-                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
-                </li>
-              {% endfor %}
-            {% endif %}
           </ul>
         </div>
       </div>
-
     </footer>
 
     {% bundledjs %}
