@@ -1,6 +1,6 @@
 media: 
   input: src/images/articles
-  output: /journal/images/articles
+  output: ../journal/images/articles
 content:
   - name: posts
     label: Posts
