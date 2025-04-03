@@ -1,10 +1,12 @@
+const fs = require("fs");
+const path = require("path");
 const { DateTime } = require("luxon");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const fs = require("fs");
-const path = require("path");
+const markdownIt = require("markdown-it");
+const { katex } = require("@mdit/plugin-katex");
 
 const isDev = process.env.ELEVENTY_ENV === "development";
 const isProd = process.env.ELEVENTY_ENV === "production";
@@ -28,6 +30,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt().use(katex, { output: "mathml" }),
+  );
 
   // setup mermaid markdown highlighter
   const highlighter = eleventyConfig.markdownHighlighter;
