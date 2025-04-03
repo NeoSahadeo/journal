@@ -128,6 +128,10 @@ module.exports = function (eleventyConfig) {
     }).use(katex, { output: "mathml" }),
   );
 
+  eleventyConfig.addFilter("filterPublished", (posts) =>
+    posts.filter((post) => post.data.published),
+  );
+
   return {
     dir: {
       input: "src",

@@ -28,12 +28,18 @@ jobs:
         - name: Configure GitHub Pages
           uses: actions/configure-pages@v5.0.0
 
-        - name: Setup pnpm
-          uses: pnpm/action-setup@v4.1.0
+        - name: Install pnpm
+          uses: pnpm/action-setup@v4
           with:
             version: 10
+        - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v4
+          with:
+            node-version: ${{ matrix.node-version }}
+            cache: 'pnpm'
+        - name: Install dependencies
         - run: |
-            echo "Installing Dependencies"
+            echo Installing Dependencies
             pnpm install
             echo "Building source"
             pnpm build
