@@ -1,4 +1,4 @@
-media: src/images/articles
+media: images/articles
 content:
   - name: posts
     label: Posts
