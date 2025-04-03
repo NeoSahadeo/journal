@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 date: 2025-04-03
 title: Huffman Coding
 tags: data-compression
@@ -7,8 +7,6 @@ tags: data-compression
 > Huffman coding is a technique for compressing data without losing any of the details (_Huffman Coding Algorithm_, n.d.)
 
 # History
-
-![](/images/articles/davidhuffman-wm-e1523479537419.webp)
 
 David A. Huffman, an electrical engineer from Ohio, is the creator of _Huffman Coding._ He received numerous awards, latest of which, the Richard Hamming Medal in 1999.
 
