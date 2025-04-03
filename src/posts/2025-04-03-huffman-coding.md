@@ -19,31 +19,29 @@ A Huffman code is a type of code that is used for lossless compression. Which me
 
 ## Example:
 
-"`BCAADDDCCACACAC`”
+`BCAADDDCCACACAC`
 
 Counting the total amount of bits equal to 15 \* 8 = 120
 
 Where ASCII representation of the characters follow:
 
-01000001 A
-
-01000010 B
-
-01000011 C
-
-01000100 D
+| Binary Value | Symbol |
+| --- | --- |
+| 01000001 | A   |
+| 01000010 | B   |
+| 01000011 | C   |
+| 01000100 | D   |
 
 The last 5 bits repeat 01000, which can be removed.
 
-001 A
+| Binary Value | Symbol |
+| --- | --- |
+| 001 | A   |
+| 010 | B   |
+| 011 | C   |
+| 100 | D   |
 
-010 B
-
-011 C
-
-100 D
-
-Recalculating the bits gives 15 _3 = 45 for the original message. Plus the ASCII character should be included along with its new values which will be calculated as 5_ 8 = 40 (ASCII characters) and 3 \* 5 = 15 (Remapped values). Total bits for the message 45 + 40 + 15 = 100
+Recalculating the bits gives 15 _3 =_ 45 for the original message. Plus the ASCII character should be included along with its new values which will be calculated as _5_ 8 = 40 (ASCII characters) and 3 \* 5 = 15 (Remapped values). Total bits for the message 45 + 40 + 15 = 100
 
 # References:
 
