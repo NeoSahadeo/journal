@@ -7,4 +7,6 @@ title: Huffman Coding
 
 ![](/media/Screenshot_20241024_113204_TikTok.jpg)
 
+![](/src/images/articles/screenshot_1.png)
+
 ![](/articles/screenshot_1.png)
