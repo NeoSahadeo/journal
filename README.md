@@ -10,9 +10,8 @@ locally, umm... here. The url is at `http://localhost:8000/`
 or `http://[::1]:8000/`.
 
 ```bash
-git clone --depth=1 https://github.com/NeoSahadeo/journal
+git clone --depth=1 -b sphinx_journal https://github.com/NeoSahadeo/journal
 cd journal
-git checkout sphinx_journal
 ```
 
 You need to install the Python stuff.
@@ -39,6 +38,3 @@ named `start`.
 ```bash
 ./start.sh
 ```
-
-Great. It's done. Be sure to run a `git pull origin main`
-every-now and again to get new stuff (or don't).
