@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 date: 2025-04-04
 title: Git Quickstart
 tags:
