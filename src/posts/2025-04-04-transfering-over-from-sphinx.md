@@ -7,4 +7,4 @@ tags:
 ---
 The original posts were written in Sphinx where I rolled my own server and scripts.
 
-My journal now uses 11ty and there isn't a direct transfer from reStructuredText to the CMS I am now using. This means that I will occasional (maybe) transfer over the content from that repository which is still <a href="[https://github.com/NeoSahadeo/journal/tree/sphinx\_journal">available here](https://github.com/NeoSahadeo/journal/tree/sphinx_journal)</a>.
+My journal now uses 11ty and there isn't a direct transfer from reStructuredText to the CMS I am now using. This means that I will occasional (maybe) transfer over the content from that repository which is still [available here](https://github.com/NeoSahadeo/journal/tree/sphinx_journal).
