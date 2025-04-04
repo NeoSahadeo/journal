@@ -10,8 +10,9 @@ locally, umm... here. The url is at `http://localhost:8000/`
 or `http://[::1]:8000/`.
 
 ```bash
-git clone --depth=1 https://github.com/NeoSahadeo/neosahadeo.github.io
-cd neosahadeo.github.io
+git clone --depth=1 https://github.com/NeoSahadeo/journal
+cd journal
+git checkout sphinx_journal
 ```
 
 You need to install the Python stuff.

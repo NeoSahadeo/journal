@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://neosahadeo.github.io/journal/posts/huffman/">
+    <link rel="alternate" type="application/rss+xml" href="/journal/feed.xml" title="Feed">
+
+    <link href="/journal/assets/main.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+    <title>
+      
+      
+        Neo&#39;s Journal
+      
+    </title>
+
+    <link rel="icon" type="“image/x-icon”" href="/journal/images/favicon.ico">
+
+    <meta property="og:title" content="Neo&#39;s Journal">
+    <meta property="og:site_name" content="Neo&#39;s Journal">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neosahadeo.github.io/journal//posts/huffman/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+      <meta name="twitter:creator" content="@NeoSahadeo_">
+    
+
+    
+    
+      
+    
+    
+      <meta name="description" content="02 Apr 2025 | 1 min read Huffman Coding Neo Sahadeo - 29/03/2025 &amp;quot;Huffman coding is a technique for compressing data without losing any...">
+      <meta property="og:description" content="02 Apr 2025 | 1 min read Huffman Coding Neo Sahadeo - 29/03/2025 &amp;quot;Huffman coding is a technique for compressing data without losing any...">
+      <meta name="description" content="02 Apr 2025 | 1 min read Huffman Coding Neo Sahadeo - 29/03/2025 &amp;quot;Huffman coding is a technique for compressing data without losing any...">
+    
+
+    
+      
+    
+    
+      <meta property="og:image" content="https://neosahadeo.github.io/journal/images/me.jpg">
+      <meta name="twitter:image" content="https://neosahadeo.github.io/journal/images/me.jpg">
+    
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <script>mermaid.initialize({startOnLoad:true});</script>
+    
+  </head>
+  <body>
+    <div class="layout-wrapper">
+
+      <header class="header">
+        <div class="header__content">
+          <h1 class="site-title">
+            <a href="/journal/">
+              Neo&#39;s Journal
+            </a>
+          </h1>
+
+          
+            <nav class="nav">
+              <ul class="nav__list">
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="https://neosahadeo.github.io/journal/posts">Posts</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="https://neosahadeo.github.io/journal/about">About</a>
+                  </li>
+                
+              </ul>
+            </nav>
+
+          
+
+        </div>
+      </header>
+
+      <main class="main">
+        
+<article class="post">
+  <header class="post__header">
+    <h1></h1>
+    <div class="post__details">
+      <time datetime="2025-04-02">
+        02 Apr 2025
+      </time>
+      <span> | </span>
+      <span>1 min read</span>
+    </div>
+  </header>
+
+  <main class="post__content">
+    <h1>Huffman Coding</h1>
+<p>Neo Sahadeo - 29/03/2025</p>
+<p>&quot;Huffman coding is a technique for compressing data without losing any
+of the details&quot; (<em>Huffman Coding Algorithm</em>, n.d.)</p>
+<p>This is done by</p>
+<h2>Example:</h2>
+<p><em>&quot;BCAADDDCCACACAC&quot;</em></p>
+<p>Counting the total amount of bits equal to 15 * 8 = 120</p>
+<p>Where ASCII representation of the characters follow:</p>
+<p>01000001 A</p>
+<p>01000010 B</p>
+<p>01000011 C</p>
+<p>01000100 D</p>
+<p><br>
+The last 5 bits repeat 01000, which can be removed.</p>
+<p>001 A</p>
+<p>010 B</p>
+<p>011 C</p>
+<p>100 D</p>
+<p>Recalculating the bits gives 15 * 3 = 45 for the original message. Plus
+the ASCII character should be included along with its new values which
+will be calculated as 5 * 8 = 40 (ASCII characters) and 3 * 5 = 15
+(Remapped values). Total bits for the message 45 + 40 + 15 = 100</p>
+<h1>References:</h1>
+<p><a href="https://www.ascii-code.com/"><em>https://www.ascii-code.com/</em></a></p>
+<p><em>Huffman coding algorithm</em>. (n.d.). Retrieved March 29, 2025, from
+https://www.programiz.com/dsa/huffman-coding</p>
+
+  </main>
+
+  <aside class="post__aside">
+    <div class="post__tags">
+      
+    </div>
+
+    <nav class="post__pagination">
+
+        <a href="/journal/journal/posts/p/">
+          <span></span>
+          <span>→</span>
+        </a>
+
+      
+    </nav>
+  </aside>
+
+</article>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content">
+
+          <ul class="hero__social-links">
+            
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://instagram.com/neosahadeo" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://github.com/NeoSahadeo/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://x.com/NeoSahadeo_/" target="_blank" rel="noopener noreferrer">X</a>
+                </li>
+              
+            
+
+            
+
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="/journal/journal/feed.xml" target="_blank" rel="noopener noreferrer">RSS</a>
+                </li>
+              
+            
+          </ul>
+
+          
+      <!--       <p class="footer__attribution"> -->
+      <!--     Created by -->
+      <!-- <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka,</a> -->
+      <!--  Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty,</a> -->
+      <!--   Checkout <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">project's github repo </a> -->
+      <!--       </p> -->
+          
+
+        </div>
+      </footer></div>
+
+    
+
+    <script src="/journal/assets/main.js"></script>
+  </body>
+</html>

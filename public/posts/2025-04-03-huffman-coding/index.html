@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://neosahadeo.github.io/posts/2025-04-03-huffman-coding/">
+    <link rel="alternate" type="application/rss+xml" href="/journal/feed.xml" title="Feed">
+
+    <link href="/journal/assets/main.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+    <title>
+      Huffman Coding
+      
+         | Neo&#39;s Journal
+      
+    </title>
+
+    <link rel="icon" type="“image/x-icon”" href="/journal/images/favicon.ico">
+
+    <meta property="og:title" content="Huffman Coding">
+    <meta property="og:site_name" content="Neo&#39;s Journal">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neosahadeo.github.io/journal//posts/2025-04-03-huffman-coding/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+      <meta name="twitter:creator" content="@NeoSahadeo_">
+    
+
+    
+    
+      
+    
+    
+      <meta name="description" content="Huffman Coding 03 Apr 2025 | 1 min read Huffman coding is a technique for compressing data without losing any of the details (Huffman Coding...">
+      <meta property="og:description" content="Huffman Coding 03 Apr 2025 | 1 min read Huffman coding is a technique for compressing data without losing any of the details (Huffman Coding...">
+      <meta name="description" content="Huffman Coding 03 Apr 2025 | 1 min read Huffman coding is a technique for compressing data without losing any of the details (Huffman Coding...">
+    
+
+    
+      
+    
+    
+      <meta property="og:image" content="https://neosahadeo.github.io/images/me.jpg">
+      <meta name="twitter:image" content="https://neosahadeo.github.io/images/me.jpg">
+    
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <script>mermaid.initialize({startOnLoad:true});</script>
+    
+  </head>
+  <body>
+    <div class="layout-wrapper">
+
+      <header class="header">
+        <div class="header__content">
+          <h1 class="site-title">
+            <a href="/journal/">
+              Neo&#39;s Journal
+            </a>
+          </h1>
+
+          
+            <nav class="nav">
+              <ul class="nav__list">
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/journal/posts/">Posts</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/journal/about/">About</a>
+                  </li>
+                
+              </ul>
+            </nav>
+
+          
+
+        </div>
+      </header>
+
+      <main class="main">
+        
+<article class="post">
+  <header class="post__header">
+    <h1>Huffman Coding</h1>
+    <div class="post__details">
+      <time datetime="2025-04-03">
+        03 Apr 2025
+      </time>
+      <span> | </span>
+      <span>1 min read</span>
+    </div>
+  </header>
+
+  <main class="post__content">
+    <blockquote>
+<p>Huffman coding is a technique for compressing data without losing any of the details (<em>Huffman Coding Algorithm</em>, n.d.)</p>
+</blockquote>
+<h1>History</h1>
+<p>David A. Huffman, an electrical engineer from Ohio, is the creator of <em>Huffman Coding.</em> He received numerous awards, latest of which, the Richard Hamming Medal in 1999.</p>
+<p>Sadly, Mr Huffman passed away in 1999 after battling cancer.</p>
+<h1>What is a Huffman Code</h1>
+<p>A Huffman code is a type of code that is used for lossless compression. Which means all data compressed can be used to reconstruct bit-for-bit the exact data before the compression.</p>
+<h2>Example:</h2>
+<p><code>BCAADDDCCACACAC</code></p>
+<p>Counting the total amount of bits equal to 15 * 8 = 120</p>
+<p>Where ASCII representation of the characters follow:</p>
+<table>
+<thead>
+<tr>
+<th>Binary Value</th>
+<th>Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01000001</td>
+<td>A</td>
+</tr>
+<tr>
+<td>01000010</td>
+<td>B</td>
+</tr>
+<tr>
+<td>01000011</td>
+<td>C</td>
+</tr>
+<tr>
+<td>01000100</td>
+<td>D</td>
+</tr>
+</tbody>
+</table>
+<p>The last 5 bits repeat 01000, which can be removed.</p>
+<table>
+<thead>
+<tr>
+<th>Binary Value</th>
+<th>Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>001</td>
+<td>A</td>
+</tr>
+<tr>
+<td>010</td>
+<td>B</td>
+</tr>
+<tr>
+<td>011</td>
+<td>C</td>
+</tr>
+<tr>
+<td>100</td>
+<td>D</td>
+</tr>
+</tbody>
+</table>
+<p>Recalculating the bits gives 15 3 = 45 for the original message. Plus the ASCII character should be included along with its new values which will be calculated as 5 8 = 40 (ASCII characters) and 3 * 5 = 15 (Remapped values). Total bits for the message 45 + 40 + 15 = 100</p>
+<h1>References:</h1>
+<p><a href="https://www.ascii-code.com/">https://www.ascii-code.com/</a></p>
+<p><em>Huffman coding algorithm</em>. (n.d.). Retrieved March 29, 2025, from <a href="https://www.programiz.com/dsa/huffman-coding">https://www.programiz.com/dsa/huffman-coding</a></p>
+
+  </main>
+
+  <aside class="post__aside">
+    <div class="post__tags">
+      
+        
+        <a href="/journal/tags/data-compression/">#data-compression</a>
+      
+    </div>
+
+    <nav class="post__pagination">
+
+        <a href="/journal/posts/2025-04-04-git-quickstart/">
+          <span>←</span>
+          <span>Git Quickstart</span>
+        </a>
+
+      
+    </nav>
+  </aside>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content">
+
+          <ul class="hero__social-links">
+            
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://instagram.com/neosahadeo" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://github.com/NeoSahadeo/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://x.com/NeoSahadeo_/" target="_blank" rel="noopener noreferrer">X</a>
+                </li>
+              
+            
+          </ul>
+        </div>
+      </footer></div>
+    
+
+    <script src="/journal/assets/main.js"></script>
+  </body>
+</html>

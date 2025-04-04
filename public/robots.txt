@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://neosahadeo.github.io/journal//sitemap.xml
