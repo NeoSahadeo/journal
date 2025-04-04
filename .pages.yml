@@ -21,7 +21,10 @@ content:
         type: string
       - name: tags
         label: Tags
-        type: string
+        type: select
+        options:
+          creatable: true
+          multiple: true
       - name: body
         label: Body
         type: rich-text
