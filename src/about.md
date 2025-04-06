@@ -17,3 +17,9 @@ Current favourite song:
 
 Here's a photo from my hike:
 <img src="/images/hikes/20250205_131145.webp" alt="Hike on Lower-Ballymakellet" style="width: 100%;">
+
+
+And of course, my LinkedIn:
+
+<script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+<script type="IN/Share" data-url="https://www.linkedin.com/in/NeoSahadeo"></script>
