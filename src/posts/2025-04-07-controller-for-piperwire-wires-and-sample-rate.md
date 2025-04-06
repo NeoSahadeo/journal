@@ -10,7 +10,7 @@ tags:
 ---
 Hey there! It was a Sunday afternoon and I thought it'd be a good idea to create a utility script to automate node connections and change the buffer size for Pipewire.
 
-I use the utilities provided by the [Pipewire Programs](https://docs.pipewire.org/page_programs.html). Its mainly just wrapper commands around \`pw-link\` and \`pw-cli\` with some regex to tie everything together.
+I use the utilities provided by the [Pipewire Programs](https://docs.pipewire.org/page_programs.html). Its mainly just wrapper commands around `pw-link` and `pw-cli` with some regex to tie everything together.
 
 There is a small by with a division by zero error that occurs when no instances of a process occurs during a query so feel free to modify the code to fix that.
 
@@ -18,7 +18,7 @@ Usage:
 
 deadsec \[option\] \[flags\]
 
-There are 2 main methods that being \`link\` and \`sample\`. An example usage for both can follow as:
+There are 2 main methods that being `link` and `sample`. An example usage for both can follow as:
 
 The following code modifies the buffer size to be 2048 bytes in size
 
