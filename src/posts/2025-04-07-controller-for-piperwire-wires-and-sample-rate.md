@@ -38,7 +38,7 @@ deadsec link Chrome Discord
 
 [Source Code](https://gist.github.com/NeoSahadeo/6febda30e303e994f718d344f7a55bfb)
 
-```
+```bash
 #!/bin/bash
 
 '
@@ -128,5 +128,3 @@ function parser() {
 
 parser $1 $2 $3 $4
 ```
-
-* * *
