@@ -13,7 +13,7 @@ Hey there! It was a Sunday afternoon and I thought it'd be a good idea to create
 
 I use the utilities provided by the [Pipewire Programs](https://docs.pipewire.org/page_programs.html). Its mainly just wrapper commands around `pw-link` and `pw-cli` with some regex to tie everything together.
 
-There is a small by with a division by zero error that occurs when no instances of a process occurs during a query so feel free to modify the code to fix that.
+There is a small bug with a division by zero error that occurs when no instances of a process occurs during a query so feel free to modify the code to fix that.
 
 Usage:
 
