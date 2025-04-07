@@ -19,7 +19,7 @@ importers:
         version: 0.1.5
     devDependencies:
       '@11ty/eleventy':
-        specifier: github:NeoSahadeo/eleventy-v2-Bash-Patch#v2.x
+        specifier: github:NeoSahadeo/eleventy-v2-Bash-Patch
         version: https://codeload.github.com/NeoSahadeo/eleventy-v2-Bash-Patch/tar.gz/5a960989f7ddcbc9b9b1722dece3d4f04355d5a5
       '@11ty/eleventy-img':
         specifier: ^4.0.2

@@ -30,10 +30,10 @@ I was compiling my blog page and I got an error:
 [11ty]     at async Template._render (/home/neosahadeo/Documents/Projects/journal/node_modules/.pnpm/@11ty+eleventy@2.0.1/node_modules/@11ty/eleventy/src/TemplateContent.js:527:16)
 ```
 
-Digging a bit deeper... and deeper, I found a bug.  
-  
-So basically when I have a bash script that tries to get the length of an array with this syntax `${#array[@]}`, and the Templating Engine for 11ty thinks that `{#...}` is part of its syntax.  
-  
+Digging a bit deeper... and deeper, I found a bug.
+
+So basically when I have a bash script that tries to get the length of an array with this syntax `${#array[@]}`, and the Templating Engine for 11ty thinks that `{\#...}` (yes I did comment it out because it broke the patch) is part of its syntax.
+
 I created a small patch \[not a solution\] for it. I might work on fixing the bug in the Engine at a later date. For now, if you're experiencing the same bug, install the patched version from my [Github v2 Bash Patch](https://github.com/NeoSahadeo/eleventy-v2-Bash-Patch).
 
 ```
