@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "github:NeoSahadeo/eleventy-v2-Bash-Patch#v2.x",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
@@ -35,10 +35,12 @@
     "dev:site": "env ELEVENTY_ENV=development eleventy --serve",
     "build:assets": "webpack --mode production",
     "build:site": "env ELEVENTY_ENV=production eleventy",
-    "clean": "rm -rf ./public"
+    "clean": "rm -rf ./public",
+    "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy"
   },
   "dependencies": {
     "@mdit/plugin-katex": "^0.16.7",
+    "cross-env": "^7.0.3",
     "remove": "^0.1.5"
   }
 }

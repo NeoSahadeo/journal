@@ -41,36 +41,6 @@ deadsec link Chrome Discord
 ```bash
 #!/bin/bash
 
-'
-	Deadsec
-
-	Description: pipewire wire linker
-	Author(s): Neo Sahadeo
-	Date: 06/04/2025
-
-	---
-
-	usage:
-	deadsec link output input [-d]
-
-	or
-
-	deadsec sample SAMPLE_RATE
-
-	output: Thing that makes sound
-	input: Thing that takes in sound
-	-d: optional for disconnect
-
-	input will only use the first 2 sinks found
-'
-
-
-function help() {
-	echo """usage:
-	deadsec [command] [flags...]
-	"""
-}
-
 function parser() {
 	if [[ $# -eq 0 || $1 == "help" ]]; then
 		help
