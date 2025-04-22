@@ -1,7 +1,7 @@
 ---
 published: true
 date: 2025-04-22
-title: Fix missing headerfile <"gtk/gtk.h">
+title: Fix missing headerfile <gtk/gtk.h>
 tags:
   - gtk
   - c
