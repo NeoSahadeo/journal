@@ -141,7 +141,7 @@ StopPropagation = true
 *   window.sextant\_events.\[METHOD\]
     
 
-Something you might want to do is have your plugin data be available to the components you inject. Sextant provides a event structure similar to normal Javascript. To event listener code is in the **utils.ts** file. Methods exposed: `addEventListener` `dispatchEvent` `removeEventListener`
+Something you might want to do is have your plugin data be available to the components you inject. Sextant provides a event structure similar to normal Javascript. The event listener code is in the **utils.ts** file. Methods exposed: `addEventListener` `dispatchEvent` `removeEventListener`
 
 For example, in the **BetterStream** plugin, we stream data to the components using the dispatch event handler.
 
