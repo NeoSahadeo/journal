@@ -58,26 +58,26 @@ Right, the folders you should be interested in is, components and plugins. Gener
 
 The `components` folder is where all your HTML and JS(TS) will go. These must be DOM specific and cannot contain any code that would not normally run in the DOM.
 
-> The code is injected at runtime into Discord and will not give you errors if the JS files won't give you any errors; it will just silently fail
+> The code is injected at runtime into Discord and will not run if there are errors in the script file; it will just silently fail
 
 ### Writing Plugins
 
 To write a plugin is really quite simple, follow this template
 
 ```
-export const file_loader_handler = (s: any) => {
+export const [PLUGIN_HANDLER_EXPORT] = (s: any) => {
    // Register IPC Content here
 };
 
 export const [PLUGIN_EXPORT_NAME]: SextantPlugin = {
-	name: "[NAME_OF_PLUGIN]",
-	load() {
-		return () => {
+    name: "[NAME_OF_PLUGIN]",
+    load() {
+        return () => {
            // Your Plugin Code goes here
         }
     }
-	unload() {
-		return () => {
+    unload() {
+        return () => {
            // Your Plugin Clean up goes here
         }
     }
@@ -96,12 +96,12 @@ To register the plugin, import the plugin into the main.ts file, then add the pl
 
 ```
 const plugins = [
-	dispatcher, // We them events
-	file_loader, // Load asap
-	settings_tab, // Load asap2
-	dynamic_styles,
-	better_stream,
-	reduce_dom_size,
+    dispatcher, // We them events
+    file_loader, // Load asap
+    settings_tab, // Load asap2
+    dynamic_styles,
+    better_stream,
+    reduce_dom_size,
     // your plugin goes here
 ];
 ```
@@ -110,10 +110,10 @@ For the IPC Handler, there is a plugins\_handler list
 
 ```
 const plugin_handlers = [
-	file_loader_handler,
-	dynamic_styles_handler,
-	settings_tab_handler,
-	// your plugin handler (IPC) goes here
+    file_loader_handler,
+    dynamic_styles_handler,
+    settings_tab_handler,
+    // your plugin handler (IPC) goes here
 ];
 ```
 
@@ -134,7 +134,6 @@ SettingsTab = true
 ReduceDOMSize = true
 StopPropagation = true
 ###################################
-
 ```
 
 ### Stream Data to the Components
